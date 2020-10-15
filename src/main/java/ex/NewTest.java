@@ -32,6 +32,11 @@ public class NewTest {
   		System.out.println("DataProvider:dataFromExcel");
   		return DataReader.readExcel("data\\data.xls", "Sheet1");
 }
+  @DataProvider
+	public static Object[][] dataFromJson() throws IOException{
+		System.out.println("DataProvider:dataFromJson");
+		return DataReader.getDataJson("data\\data.json");
+  }
   @Test(groups={"test", "asrx"}, dataProvider="dataFromExcel2")
   public void a(String inputData) {    
 	  System.out.println("Testing testing 123");
@@ -58,6 +63,19 @@ public class NewTest {
       String result = driver.findElement(By.xpath(Result)).getText();
       int sum = Integer.parseInt(result);
       Assert.assertTrue(inputtotal == sum);
+  }
+  @Test(groups={"testjson"}, dataProvider="dataFromJson")
+  public void b(String inputData) {    
+	  System.out.println("Testing testing 123");
+	  System.out.println(inputData);
+	  driver.get(baseUrl);
+	  WebElement input = driver.findElement(By.xpath(InputMsgXPath));
+      WebElement button = driver.findElement(By.xpath(ShowMsgButtonXpath));
+      input.sendKeys(inputData);
+      button.click();
+      
+      String result = driver.findElement(By.xpath(MsgDisplayXpath)).getText();
+      Assert.assertEquals(result,inputData); 
   }
   @BeforeTest(alwaysRun = true)
   public void beforeTest() {

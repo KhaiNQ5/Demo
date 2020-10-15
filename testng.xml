@@ -4,7 +4,7 @@
   <test name="Test Demo">
   <groups>
       <run>
-       <include name="test"/>
+       <include name="testjson"/>
       </run>
   </groups>
       <classes>

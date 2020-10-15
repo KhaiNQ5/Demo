@@ -4,13 +4,15 @@
   <test thread-count="5" name="Test Demo(failed)">
     <groups>
       <run>
-        <include name="test1"/>
+        <include name="testjson"/>
       </run>
     </groups>
     <classes>
       <class name="ex.NewTest">
         <methods>
-          <include name="f" invocation-numbers="0 1 2 3 4"/>
+          <include name="b"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
         </methods>
       </class> <!-- ex.NewTest -->
     </classes>

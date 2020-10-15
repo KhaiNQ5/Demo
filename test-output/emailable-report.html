@@ -8,15 +8,72 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test Demo</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">12,363</td><td>test</td><td></td></tr>
+<tr><th colspan="8">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">9</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">11,433</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test Demo &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">ex.NewTest</td><td><a href="#m0">a</a></td><td rowspan="5">1602736863249</td><td rowspan="5">2611</td></tr><tr class="passedeven"><td><a href="#m1">a</a></td></tr><tr class="passedeven"><td><a href="#m2">a</a></td></tr><tr class="passedeven"><td><a href="#m3">a</a></td></tr><tr class="passedeven"><td><a href="#m4">a</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">ex.NewTest</td><td><a href="#m0">b</a></td><td rowspan="1">1602750546873</td><td rowspan="1">0</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="9">ex.NewTest</td><td><a href="#m1">a</a></td><td rowspan="5">1602750545295</td><td rowspan="5">570</td></tr><tr class="passedeven"><td><a href="#m2">a</a></td></tr><tr class="passedeven"><td><a href="#m3">a</a></td></tr><tr class="passedeven"><td><a href="#m4">a</a></td></tr><tr class="passedeven"><td><a href="#m5">a</a></td></tr><tr class="passedeven"><td><a href="#m6">f1</a></td><td rowspan="4">1602750546905</td><td rowspan="4">815</td></tr><tr class="passedeven"><td><a href="#m7">f1</a></td></tr><tr class="passedeven"><td><a href="#m8">f1</a></td></tr><tr class="passedeven"><td><a href="#m9">f1</a></td></tr></tbody>
 </table>
-<h2>Test Demo</h2><h3 id="m0">ex.NewTest#a</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>dsfagrgg</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">ex.NewTest#a</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Pajsmth</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">ex.NewTest#a</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>fglPi^%%*2</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">ex.NewTest#b</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: Expected name at line 6 column 6 path $.dataSet[0].String
+	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:49)
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:145)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:797)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
+	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:789)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: Expected name at line 6 column 6 path $.dataSet[0].String
+	at com.google.gson.internal.Streams.parse(Streams.java:60)
+	at com.google.gson.JsonParser.parseReader(JsonParser.java:85)
+	at com.google.gson.JsonParser.parseReader(JsonParser.java:60)
+	at com.google.gson.JsonParser.parse(JsonParser.java:104)
+	at ex.DataReader.getDataJson(DataReader.java:93)
+	at ex.NewTest.dataFromJson(NewTest.java:38)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:76)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:45)
+	... 25 more
+Caused by: com.google.gson.stream.MalformedJsonException: Expected name at line 6 column 6 path $.dataSet[0].String
+	at com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1564)
+	at com.google.gson.stream.JsonReader.doPeek(JsonReader.java:506)
+	at com.google.gson.stream.JsonReader.hasNext(JsonReader.java:415)
+	at com.google.gson.internal.bind.TypeAdapters$29.read(TypeAdapters.java:722)
+	at com.google.gson.internal.bind.TypeAdapters$29.read(TypeAdapters.java:715)
+	at com.google.gson.internal.bind.TypeAdapters$29.read(TypeAdapters.java:723)
+	at com.google.gson.internal.bind.TypeAdapters$29.read(TypeAdapters.java:698)
+	at com.google.gson.internal.Streams.parse(Streams.java:48)
+	... 37 more
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">ex.NewTest#a</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>123test</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">ex.NewTest#a</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>dsfagrgg</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m3">ex.NewTest#a</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>sfafsf</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">ex.NewTest#a</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>123test</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">ex.NewTest#a</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Pajsmth</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">ex.NewTest#a</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>fglPi^%%*2</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">ex.NewTest#f1</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>22</td><td>2</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">ex.NewTest#f1</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>1</td><td>0</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">ex.NewTest#f1</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>123</td><td>222</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">ex.NewTest#f1</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>0</td><td>0</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

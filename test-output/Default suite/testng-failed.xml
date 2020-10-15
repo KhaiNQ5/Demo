@@ -5,7 +5,7 @@
     <classes>
       <class name="ex.NewTest">
         <methods>
-          <include name="f"/>
+          <include name="b"/>
           <include name="beforeTest"/>
           <include name="afterTest"/>
         </methods>

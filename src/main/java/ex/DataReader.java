@@ -1,7 +1,11 @@
 package ex;
+import java.util.List;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.IOException;
+import java.util.Properties;
 
 import org.apache.poi.hssf.usermodel.HSSFCell;
 import org.apache.poi.hssf.usermodel.HSSFRow;
@@ -15,6 +19,11 @@ import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+import com.google.gson.Gson;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonParser;
+import com.google.gson.reflect.TypeToken;
 
 /*
  * public class DataReader { public static Object[][] readExcel(String
@@ -80,4 +89,17 @@ public class DataReader {
         workbook.close();
         return Data;
 	}
+    public static Object[][] getDataJson(String pathToJson) throws FileNotFoundException {
+		JsonElement jsonData = new JsonParser().parse(new FileReader(pathToJson));
+        JsonElement dataSet = jsonData.getAsJsonObject().get("dataSet");
+        List<TestData> testData = new Gson().fromJson(dataSet, new TypeToken<List<TestData>>() {
+        }.getType());
+        Object[][] returnValue = new Object[testData.size()][1];
+        int index = 0;
+        for (Object[] each : returnValue) {
+            each[0] = testData.get(index++);
+        }
+        return returnValue;
+    }
 }
+	
