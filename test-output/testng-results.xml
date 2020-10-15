@@ -1,26 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+<testng-results ignored="1" total="6" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-10-15T11:11:27 ICT" name="Default suite" finished-at="2020-10-15T11:11:42 ICT" duration-ms="15090">
+  <suite started-at="2020-10-15T11:40:59 ICT" name="Suite" finished-at="2020-10-15T11:41:12 ICT" duration-ms="12363">
     <groups>
-      <group name="no">
-        <method signature="NewTest.f1(java.lang.String, java.lang.String)[pri:0, instance:ex.NewTest@7690781]" name="f1" class="ex.NewTest"/>
-      </group> <!-- no -->
+      <group name="test">
+        <method signature="NewTest.a(java.lang.String)[pri:0, instance:ex.NewTest@7690781]" name="a" class="ex.NewTest"/>
+      </group> <!-- test -->
       <group name="asrx">
-        <method signature="NewTest.f(java.lang.String)[pri:0, instance:ex.NewTest@7690781]" name="f" class="ex.NewTest"/>
+        <method signature="NewTest.a(java.lang.String)[pri:0, instance:ex.NewTest@7690781]" name="a" class="ex.NewTest"/>
       </group> <!-- asrx -->
-      <group name="test1">
-        <method signature="NewTest.f(java.lang.String)[pri:0, instance:ex.NewTest@7690781]" name="f" class="ex.NewTest"/>
-      </group> <!-- test1 -->
     </groups>
-    <test started-at="2020-10-15T11:11:27 ICT" name="Default test" finished-at="2020-10-15T11:11:42 ICT" duration-ms="15090">
+    <test started-at="2020-10-15T11:40:59 ICT" name="Test Demo" finished-at="2020-10-15T11:41:12 ICT" duration-ms="12363">
       <class name="ex.NewTest">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:ex.NewTest@7690781]" started-at="2020-10-15T11:11:27 ICT" name="beforeTest" finished-at="2020-10-15T11:11:30 ICT" duration-ms="2882" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:ex.NewTest@7690781]" started-at="2020-10-15T11:40:59 ICT" name="beforeTest" finished-at="2020-10-15T11:41:02 ICT" duration-ms="2992" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="f(java.lang.String)[pri:0, instance:ex.NewTest@7690781]" started-at="2020-10-15T11:11:30 ICT" name="f" data-provider="dataFromExcel2" finished-at="2020-10-15T11:11:32 ICT" duration-ms="1334" status="PASS">
+        <test-method signature="a(java.lang.String)[pri:0, instance:ex.NewTest@7690781]" started-at="2020-10-15T11:41:03 ICT" name="a" data-provider="dataFromExcel2" finished-at="2020-10-15T11:41:05 ICT" duration-ms="2611" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -30,8 +27,8 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-        <test-method signature="f(java.lang.String)[pri:0, instance:ex.NewTest@7690781]" started-at="2020-10-15T11:11:32 ICT" name="f" data-provider="dataFromExcel2" finished-at="2020-10-15T11:11:32 ICT" duration-ms="495" status="PASS">
+        </test-method> <!-- a -->
+        <test-method signature="a(java.lang.String)[pri:0, instance:ex.NewTest@7690781]" started-at="2020-10-15T11:41:05 ICT" name="a" data-provider="dataFromExcel2" finished-at="2020-10-15T11:41:06 ICT" duration-ms="602" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -41,8 +38,8 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-        <test-method signature="f(java.lang.String)[pri:0, instance:ex.NewTest@7690781]" started-at="2020-10-15T11:11:32 ICT" name="f" data-provider="dataFromExcel2" finished-at="2020-10-15T11:11:32 ICT" duration-ms="462" status="PASS">
+        </test-method> <!-- a -->
+        <test-method signature="a(java.lang.String)[pri:0, instance:ex.NewTest@7690781]" started-at="2020-10-15T11:41:06 ICT" name="a" data-provider="dataFromExcel2" finished-at="2020-10-15T11:41:08 ICT" duration-ms="1623" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -52,8 +49,8 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-        <test-method signature="f(java.lang.String)[pri:0, instance:ex.NewTest@7690781]" started-at="2020-10-15T11:11:32 ICT" name="f" data-provider="dataFromExcel2" finished-at="2020-10-15T11:11:34 ICT" duration-ms="1880" status="PASS">
+        </test-method> <!-- a -->
+        <test-method signature="a(java.lang.String)[pri:0, instance:ex.NewTest@7690781]" started-at="2020-10-15T11:41:08 ICT" name="a" data-provider="dataFromExcel2" finished-at="2020-10-15T11:41:08 ICT" duration-ms="612" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -63,8 +60,8 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-        <test-method signature="f(java.lang.String)[pri:0, instance:ex.NewTest@7690781]" started-at="2020-10-15T11:11:34 ICT" name="f" data-provider="dataFromExcel2" finished-at="2020-10-15T11:11:35 ICT" duration-ms="783" status="PASS">
+        </test-method> <!-- a -->
+        <test-method signature="a(java.lang.String)[pri:0, instance:ex.NewTest@7690781]" started-at="2020-10-15T11:41:08 ICT" name="a" data-provider="dataFromExcel2" finished-at="2020-10-15T11:41:11 ICT" duration-ms="2943" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -74,76 +71,12 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-        <test-method signature="f1(java.lang.String, java.lang.String)[pri:0, instance:ex.NewTest@7690781]" started-at="2020-10-15T11:11:35 ICT" name="f1" data-provider="dataFromExcel" finished-at="2020-10-15T11:11:38 ICT" duration-ms="3076" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[22]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[2]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- f1 -->
-        <test-method signature="f1(java.lang.String, java.lang.String)[pri:0, instance:ex.NewTest@7690781]" started-at="2020-10-15T11:11:38 ICT" name="f1" data-provider="dataFromExcel" finished-at="2020-10-15T11:11:39 ICT" duration-ms="838" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[123]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[222]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- f1 -->
-        <test-method signature="f1(java.lang.String, java.lang.String)[pri:0, instance:ex.NewTest@7690781]" started-at="2020-10-15T11:11:39 ICT" name="f1" data-provider="dataFromExcel" finished-at="2020-10-15T11:11:40 ICT" duration-ms="646" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[1]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[0]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- f1 -->
-        <test-method signature="f1(java.lang.String, java.lang.String)[pri:0, instance:ex.NewTest@7690781]" started-at="2020-10-15T11:11:40 ICT" name="f1" data-provider="dataFromExcel" finished-at="2020-10-15T11:11:41 ICT" duration-ms="1620" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[0]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[0]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- f1 -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:ex.NewTest@7690781]" started-at="2020-10-15T11:11:41 ICT" name="afterTest" finished-at="2020-10-15T11:11:42 ICT" duration-ms="738" status="PASS">
+        </test-method> <!-- a -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:ex.NewTest@7690781]" started-at="2020-10-15T11:41:11 ICT" name="afterTest" finished-at="2020-10-15T11:41:12 ICT" duration-ms="688" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- ex.NewTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test Demo -->
+  </suite> <!-- Suite -->
 </testng-results>

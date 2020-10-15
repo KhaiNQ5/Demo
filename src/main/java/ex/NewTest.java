@@ -32,8 +32,8 @@ public class NewTest {
   		System.out.println("DataProvider:dataFromExcel");
   		return DataReader.readExcel("data\\data.xls", "Sheet1");
 }
-  @Test(groups={"test1", "asrx"}, dataProvider="dataFromExcel2")
-  public void f(String inputData) {    
+  @Test(groups={"test", "asrx"}, dataProvider="dataFromExcel2")
+  public void a(String inputData) {    
 	  System.out.println("Testing testing 123");
 	  driver.get(baseUrl);
 	  WebElement input = driver.findElement(By.xpath(InputMsgXPath));
@@ -59,13 +59,13 @@ public class NewTest {
       int sum = Integer.parseInt(result);
       Assert.assertTrue(inputtotal == sum);
   }
-  @BeforeTest
+  @BeforeTest(alwaysRun = true)
   public void beforeTest() {
 	  System.setProperty("webdriver.chrome.driver","C:\\Ruby27-x64\\bin\\chromedriver.exe");
 		driver = new ChromeDriver();
   }
 
-  @AfterTest
+  @AfterTest(alwaysRun = true)
   public void afterTest() {
 	  driver.quit();
 
